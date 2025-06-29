@@ -1,22 +1,14 @@
-name: 4-Multi Jobs Workflow
+name: 3-Cron Workflow
 
 on:
-  workflow_dispatch:
+  schedule:
+    - cron: '*/5 * * * *' # Runs in every 5 minutes
 
 jobs:
-  workflow-job-one:
+  cron-workflow:
     runs-on: ubuntu-latest
 
     steps:
-      - name: Job One Step One
+      - name: Cron Workflow
         run: |
-          echo "Hello, First Workflow step one"
-
-
-  workflow-job-two:
-    runs-on: ubuntu-latest
-
-    steps:
-      - name: Job two step one
-        run: |
-          echo "Hello, Second Workflow! step one"
+          echo "Hello Cron Job!"
