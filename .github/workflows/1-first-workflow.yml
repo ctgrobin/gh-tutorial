@@ -1,16 +1,30 @@
+# name: 1-First Workflow
+
+# on:
+#   push:
+#     branches:
+#       - main
+
+# jobs:
+#   first-workflow-job:
+#     runs-on: ubuntu-latest
+
+#     steps:
+#       - name: First step
+#         run: |
+#           echo "Hello, World!"
+#           echo "Hello Again!"
+
 name: 1-First Workflow
 
-on:
-  push:
-    branches:
-      - main
+on: [push]
 
 jobs:
-  first-workflow-job:
-    runs-on: ubuntu-latest
-
-    steps:
-      - name: First step
-        run: |
-          echo "Hello, World!"
-          echo "Hello Again!"
+   first-workflow-job:
+     runs-on: ubuntu-latest
+     steps:
+       - name: First Steps
+         run: |
+           echo "hello , World"
+           echo "Hello, Again"
+           
