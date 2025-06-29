@@ -11,6 +11,10 @@ jobs:
       - name: Job One Step One
         run: |
           echo "Hello, First Workflow step one"
+    
+      - name: Job One Step two
+        run: |
+          echo "Hello, First Workflow step two"      
 
 
   workflow-job-two:
@@ -20,3 +24,7 @@ jobs:
       - name: Job two step one
         run: |
           echo "Hello, Second Workflow! step one"
+
+      - name: Job two step two
+        run: |
+          echo "Hello, Second Workflow! step two"    
