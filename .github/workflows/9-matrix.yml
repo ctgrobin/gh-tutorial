@@ -1,4 +1,4 @@
-name: Matrix Workflow
+name: 9-Matrix Workflow
 
 on:
   workflow_dispatch:
