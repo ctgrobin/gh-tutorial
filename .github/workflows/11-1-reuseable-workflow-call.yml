@@ -7,8 +7,4 @@ on:
 
 jobs:
   conditional-workflow:
-    runs-on: ubuntu-latest
-
-    steps:
-      - name: Build backend Image
-        uses: ctgrobin/gh-tutorial/.github/workflows/11-reusable-workflow.yml@main
+    uses: ctgrobin/gh-tutorial/.github/workflows/11-reusable-workflow.yml@main
